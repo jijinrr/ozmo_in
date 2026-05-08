@@ -17,17 +17,17 @@ const contactInfo = [
     href: "mailto:hello@ozmoinnovations.com",
   },
   {
-    icon: Phone,
-    label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
-  },
-  {
-    icon: MapPin,
-    label: "Location",
-    value: "San Francisco, CA",
-    href: "#",
-  },
+  icon: Phone,
+  label: "Phone",
+  value: "+91 8457570938",
+  href: "tel:+918457570938",
+},
+{
+  icon: MapPin,
+  label: "Location",
+  value: "Dubai, UAE",
+  href: "#",
+},
 ]
 
 const socialLinks = [
@@ -66,8 +66,8 @@ export function ContactSection() {
     >
       {/* Cinematic Background */}
       <div className="absolute inset-0 liquid-bg opacity-30" />
-      <Parallax speed={0.15} className="absolute top-0 right-0 w-[600px] h-[600px] bg-ozmo-cyan/10 rounded-full blur-[120px]" />
-      <Parallax speed={0.2} className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-ozmo-green/10 rounded-full blur-[100px]" />
+      <Parallax speed={0.15} className="absolute top-0 right-0 w-[600px] h-[600px] bg-ozmo-cyan/10 rounded-full blur-[120px]" children={undefined} />
+      <Parallax speed={0.2} className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-ozmo-green/10 rounded-full blur-[100px]" children={undefined} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}

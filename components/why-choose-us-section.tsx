@@ -6,10 +6,10 @@ import { Award, Zap, Layers, Cpu, CheckCircle2 } from "lucide-react"
 import { ScrollReveal, Parallax, ZoomScroll } from "./scroll-reveal"
 
 const stats = [
-  { value: 150, suffix: "+", label: "Projects Completed", description: "Successfully delivered" },
-  { value: 50, suffix: "+", label: "Happy Clients", description: "Worldwide partners" },
+  { value: 70, suffix: "+", label: "Projects Completed", description: "Successfully delivered" },
+  { value: 68, suffix: "+", label: "Happy Clients", description: "Worldwide partners" },
   { value: 99, suffix: "%", label: "Success Rate", description: "Client satisfaction" },
-  { value: 5, suffix: "+", label: "Years Experience", description: "Industry expertise" },
+  { value: 3, suffix: "+", label: "Years Experience", description: "Industry expertise" },
 ]
 
 const features = [
@@ -103,8 +103,8 @@ export function WhyChooseUsSection() {
         className="absolute inset-0"
       >
         <div className="absolute inset-0 liquid-bg opacity-30" />
-        <Parallax speed={0.15} className="absolute top-0 right-0 w-[600px] h-[600px] bg-ozmo-cyan/5 rounded-full blur-[120px]" />
-        <Parallax speed={0.25} className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-ozmo-green/5 rounded-full blur-[100px]" />
+        <Parallax speed={0.15} className="absolute top-0 right-0 w-[600px] h-[600px] bg-ozmo-cyan/5 rounded-full blur-[120px]" children={undefined} />
+        <Parallax speed={0.25} className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-ozmo-green/5 rounded-full blur-[100px]" children={undefined} />
       </motion.div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
