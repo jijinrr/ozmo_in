@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { ArrowRight, ChevronRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { MagneticButton } from "./magnetic-button"
 
@@ -62,28 +62,6 @@ function HeroBackground() {
         }}
       />
     </div>
-  )
-}
-
-/* ─────────────────────────────────────────────────────────────────
-   Announcement badge
-   ───────────────────────────────────────────────────────────────── */
-function AnnouncementBadge() {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: -12 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, delay: 0, ease: EASE }}
-      className="inline-flex items-center gap-2 px-4 py-2 rounded-full
-        glass-light border border-border shadow-sm
-        cursor-default select-none group"
-    >
-      <span className="text-cyan-500 text-[0.82rem]">✦</span>
-      <span className="text-[0.78rem] font-semibold text-muted-foreground tracking-wide">
-        Trusted by 500+ teams worldwide
-      </span>
-      <ChevronRight className="w-3 h-3 text-muted-foreground group-hover:text-cyan-500 group-hover:translate-x-0.5 transition-all duration-200" />
-    </motion.div>
   )
 }
 
@@ -305,7 +283,6 @@ export function HeroSection() {
                    min-h-[100svh] pt-20 md:pt-24 pb-20 px-6"
       >
         <div className="w-full max-w-[760px] mx-auto flex flex-col items-center text-center gap-8">
-          <AnnouncementBadge />
           <HeadlineBlock />
           <Subheading />
           <CTAGroup
