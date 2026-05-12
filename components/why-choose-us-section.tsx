@@ -95,7 +95,7 @@ export function WhyChooseUsSection() {
     <section
       id="about"
       ref={sectionRef}
-      className="relative py-32 overflow-hidden"
+      className="relative py-20 md:py-32 overflow-hidden"
     >
       {/* Cinematic Background */}
       <motion.div 
@@ -173,12 +173,12 @@ export function WhyChooseUsSection() {
               <motion.div
                 whileHover={{ y: -8, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="group relative"
+                className="group relative h-full"
               >
                 {/* Glow Effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-ozmo-cyan/10 to-ozmo-green/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
-                <div className="relative flex gap-6 p-8 rounded-2xl glass border border-white/5 group-hover:border-ozmo-cyan/30 transition-all duration-300 overflow-hidden">
+                <div className="relative flex gap-6 p-8 rounded-2xl glass border border-white/5 group-hover:border-ozmo-cyan/30 transition-all duration-300 overflow-hidden h-full">
                   {/* Background Shimmer */}
                   <motion.div
                     className="absolute inset-0 opacity-0 group-hover:opacity-100"

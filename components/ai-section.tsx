@@ -188,7 +188,7 @@ export function AISection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-32 overflow-hidden"
+      className="relative py-20 md:py-32 overflow-hidden"
     >
       {/* Cinematic Background */}
       <div className="absolute inset-0">
@@ -198,7 +198,7 @@ export function AISection() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           {/* Content */}
           <div>
             <ScrollReveal>
@@ -248,16 +248,16 @@ export function AISection() {
 
             {/* Capabilities */}
             <ScrollReveal delay={0.5}>
-              <div className="flex flex-wrap gap-3 mb-10">
+              <div className="grid grid-cols-2 gap-2 mb-10">
                 {capabilities.map((cap, i) => (
                   <motion.div
                     key={cap.label}
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ delay: 0.6 + i * 0.1 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-subtle border border-white/10 text-sm"
+                    className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-subtle border border-white/10 text-sm"
                   >
-                    <cap.icon className="w-4 h-4 text-ozmo-cyan" />
+                    <cap.icon className="w-4 h-4 text-ozmo-cyan shrink-0" />
                     <span className="text-foreground">{cap.label}</span>
                   </motion.div>
                 ))}

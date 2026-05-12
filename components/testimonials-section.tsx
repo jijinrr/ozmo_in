@@ -62,10 +62,10 @@ function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] 
       {/* Glow */}
       <div className="absolute -inset-1 bg-gradient-to-r from-ozmo-cyan/20 to-ozmo-green/20 rounded-3xl blur-xl opacity-50" />
       
-      <div className="relative p-8 md:p-10 rounded-3xl glass border border-white/10 overflow-hidden">
+      <div className="relative p-8 md:p-10 rounded-3xl glass border border-white/10">
         {/* Quote Icon */}
-        <div className="absolute -top-3 -left-3 p-4 rounded-2xl bg-gradient-to-br from-ozmo-cyan to-ozmo-green">
-          <Quote className="w-6 h-6 text-background" />
+        <div className="absolute top-4 left-4 p-3 rounded-xl bg-gradient-to-br from-ozmo-cyan to-ozmo-green shadow-lg shadow-ozmo-cyan/20">
+          <Quote className="w-5 h-5 text-background" />
         </div>
 
         {/* Grid Background */}
@@ -81,7 +81,7 @@ function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] 
         />
 
         {/* Stars */}
-        <div className="flex gap-1 mb-6 pt-4">
+        <div className="flex gap-1 mb-6 pt-12">
           {Array.from({ length: testimonial.rating }).map((_, i) => (
             <motion.div
               key={i}
@@ -96,7 +96,9 @@ function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] 
 
         {/* Content */}
         <p className="relative z-10 text-lg md:text-xl text-foreground leading-relaxed mb-8">
-          &ldquo;{testimonial.content}&rdquo;
+          <span className="text-ozmo-cyan font-black">&ldquo;</span>
+          {testimonial.content}
+          <span className="text-ozmo-cyan font-black">&rdquo;</span>
         </p>
 
         {/* Author */}
@@ -155,7 +157,7 @@ export function TestimonialsSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-32 overflow-hidden"
+      className="relative py-20 md:py-32 overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0 liquid-bg opacity-30" />

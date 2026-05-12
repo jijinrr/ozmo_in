@@ -316,7 +316,7 @@ export function PortfolioSection() {
     <section
       id="portfolio"
       ref={sectionRef}
-      className="relative py-32 overflow-hidden"
+      className="relative py-20 md:py-32 overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0 liquid-bg opacity-30" />
@@ -348,7 +348,7 @@ export function PortfolioSection() {
 
         {/* Category Filter */}
         <ScrollReveal delay={0.3}>
-          <div className="flex flex-wrap justify-center gap-2 mb-16">
+          <div className="flex flex-wrap justify-center gap-2 mb-8 md:mb-16">
             {categories.map((category) => (
               <motion.button
                 key={category}

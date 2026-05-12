@@ -17,7 +17,7 @@ import { ScrollReveal, Parallax } from "./scroll-reveal"
 const services = [
   {
     icon: Globe,
-    title: "Website Development",
+    title: "Web Development",
     description: "Stunning, high-performance websites built with cutting-edge technologies that captivate visitors and drive conversions.",
     features: ["Custom Design", "SEO Optimized", "Lightning Fast"],
     gradient: "from-ozmo-cyan to-ozmo-teal",
@@ -171,10 +171,10 @@ function ServiceCard({
 
           {/* Learn More */}
           <motion.div
-            className="relative z-10 flex items-center gap-2 text-sm font-medium text-ozmo-cyan opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            className="relative z-10 flex items-center gap-2 text-sm font-medium text-ozmo-cyan opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300"
             style={{ transform: "translateZ(25px)" }}
           >
-            Learn more
+            Learn More
             <ArrowUpRight className="w-4 h-4" />
           </motion.div>
 
@@ -196,7 +196,7 @@ export function ServicesSection() {
     <section 
       ref={sectionRef}
       id="services" 
-      className="relative py-32 overflow-hidden"
+      className="relative py-20 md:py-32 overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 liquid-bg opacity-50" />

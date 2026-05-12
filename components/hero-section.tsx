@@ -159,11 +159,11 @@ function CTAGroup({ onPrimary, onSecondary }: CTAGroupProps) {
       className="flex flex-col sm:flex-row items-center justify-center gap-3"
     >
       {/* Primary */}
-      <MagneticButton strength={0.18}>
-        <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+      <MagneticButton strength={0.18} className="w-full sm:w-auto">
+        <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
           <Button
             onClick={onPrimary}
-            className="bg-gradient-to-r from-cyan-500 to-teal-500
+            className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-teal-500
               hover:from-cyan-400 hover:to-teal-400
               text-white font-semibold px-8 py-[22px] rounded-2xl
               shadow-lg shadow-cyan-500/20 dark:shadow-cyan-400/20
@@ -176,12 +176,12 @@ function CTAGroup({ onPrimary, onSecondary }: CTAGroupProps) {
       </MagneticButton>
 
       {/* Secondary */}
-      <MagneticButton strength={0.18}>
-        <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+      <MagneticButton strength={0.18} className="w-full sm:w-auto">
+        <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
           <Button
             onClick={onSecondary}
             variant="outline"
-            className="px-8 py-[22px] rounded-2xl border-border
+            className="w-full sm:w-auto px-8 py-[22px] rounded-2xl border-border
               text-foreground hover:border-cyan-300 dark:hover:border-cyan-700
               hover:text-cyan-500 dark:hover:text-cyan-400
               hover:bg-cyan-50/30 dark:hover:bg-cyan-950/20
