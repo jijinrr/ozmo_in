@@ -10,7 +10,6 @@ const stats = [
   { value: 68, suffix: "+", label: "Happy Clients", description: "Worldwide partners" },
   { value: 99, suffix: "%", label: "Success Rate", description: "Client satisfaction" },
   { value: 3, suffix: "+", label: "Years Experience", description: "Industry expertise" },
-<<<<<<< HEAD
 ]
 
 const qualityPillars = [
@@ -34,8 +33,6 @@ const qualityPillars = [
     title: "Security by Default",
     description: "Every product ships with hardened security, data protection, and compliance baked in from day one — not bolted on later.",
   },
-=======
->>>>>>> main
 ]
 
 const features = [
