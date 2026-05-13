@@ -22,6 +22,7 @@ const founders = [
     image: "/founders/jijin.jpg",
     social: { linkedin: "#", github: "#", twitter: "#" },
     accent: "from-ozmo-cyan to-ozmo-teal",
+    accentColor: "ozmo-cyan",
     flip: false,
   },
   {
@@ -39,69 +40,94 @@ const founders = [
     image: "/founders/faisal.jpg",
     social: { linkedin: "#", github: "#", twitter: "#" },
     accent: "from-ozmo-teal to-ozmo-green",
+    accentColor: "ozmo-teal",
     flip: true,
   },
 ]
 
 function FounderBlock({ founder, index }: { founder: (typeof founders)[0]; index: number }) {
   const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, margin: "-80px" })
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] })
-  const imgY = useTransform(scrollYProgress, [0, 1], [-30, 30])
+  const isInView = useInView(ref, { once: true, margin: "-60px" })
 
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-      className={`relative flex flex-col ${founder.flip ? "lg:flex-row-reverse" : "lg:flex-row"} gap-0 rounded-3xl overflow-hidden glass border border-white/10 group hover:border-ozmo-cyan/20 transition-all duration-700`}
+      transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+      className={`relative flex flex-col ${founder.flip ? "lg:flex-row-reverse" : "lg:flex-row"} rounded-3xl overflow-hidden border border-white/10 group hover:border-ozmo-cyan/30 transition-all duration-700 lg:min-h-[680px]`}
     >
       {/* Hover glow */}
-      <div className={`absolute -inset-1 bg-gradient-to-br ${founder.accent} rounded-3xl blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-700 pointer-events-none`} />
+      <div className={`absolute -inset-1 bg-gradient-to-br ${founder.accent} rounded-3xl blur-2xl opacity-0 group-hover:opacity-15 transition-opacity duration-700 pointer-events-none`} />
 
-      {/* Photo side — 45% width on desktop */}
-      <div className="relative lg:w-[45%] w-full aspect-[4/5] lg:aspect-auto overflow-hidden flex-shrink-0">
-        <motion.div style={{ y: imgY }} className="absolute inset-0">
-          <Image
-            src={founder.image}
-            alt={founder.name}
-            fill
-            className="object-cover object-top"
-            sizes="(max-width: 1024px) 100vw, 45vw"
-          />
-        </motion.div>
+      {/* ── Photo panel — 50% width on desktop ── */}
+      <div className="relative lg:w-1/2 w-full aspect-[3/4] lg:aspect-auto overflow-hidden flex-shrink-0">
+        <Image
+          src={founder.image}
+          alt={founder.name}
+          fill
+          className="object-cover object-[center_15%]"
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          priority={index === 0}
+        />
 
-        {/* Color overlay tint */}
-        <div className={`absolute inset-0 bg-gradient-to-t ${founder.accent} opacity-10`} />
+        {/* Subtle color tint */}
+        <div className={`absolute inset-0 bg-gradient-to-t ${founder.accent} opacity-[0.06]`} />
 
-        {/* Bottom fade on mobile / side fade on desktop */}
-        <div className={`absolute inset-0 ${founder.flip ? "lg:bg-gradient-to-l" : "lg:bg-gradient-to-r"} bg-gradient-to-t from-background/60 via-transparent to-transparent`} />
+        {/* Side fade into content panel */}
+        <div
+          className={`absolute inset-0 ${
+            founder.flip
+              ? "lg:bg-gradient-to-l"
+              : "lg:bg-gradient-to-r"
+          } bg-gradient-to-t from-background/70 via-background/10 to-transparent`}
+        />
 
-        {/* Role badge */}
-        <div className="absolute bottom-5 left-5 z-10">
-          <span className={`inline-block px-4 py-2 rounded-full text-xs font-bold bg-gradient-to-r ${founder.accent} text-background shadow-lg`}>
-            {founder.role}
-          </span>
+        {/* Cinematic name watermark on photo */}
+        <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8 z-10">
+          <p
+            className={`text-5xl lg:text-7xl font-black leading-none bg-gradient-to-r ${founder.accent} bg-clip-text text-transparent opacity-20 select-none tracking-tight`}
+          >
+            {founder.name.split(" ")[0]}
+          </p>
         </div>
 
-        {/* Index number watermark */}
-        <div className="absolute top-5 right-5 z-10">
-          <span className={`text-7xl font-black bg-gradient-to-br ${founder.accent} bg-clip-text text-transparent opacity-20 select-none`}>
+        {/* Role badge — premium pill with glow */}
+        <div className="absolute top-6 left-6 z-10">
+          <div className="relative">
+            <div className={`absolute inset-0 bg-gradient-to-r ${founder.accent} rounded-full blur-md opacity-60`} />
+            <span
+              className={`relative inline-block px-4 py-1.5 rounded-full text-xs font-bold bg-gradient-to-r ${founder.accent} text-background shadow-lg`}
+            >
+              {founder.role}
+            </span>
+          </div>
+        </div>
+
+        {/* Index watermark */}
+        <div className="absolute top-6 right-6 z-10">
+          <span
+            className={`text-8xl font-black bg-gradient-to-br ${founder.accent} bg-clip-text text-transparent opacity-15 select-none`}
+          >
             0{founder.id}
           </span>
         </div>
       </div>
 
-      {/* Info side — 55% width on desktop */}
-      <div className="relative lg:w-[55%] flex flex-col justify-center p-8 md:p-12">
+      {/* ── Content panel — 50% width on desktop ── */}
+      <div className="relative lg:w-1/2 flex flex-col justify-center p-10 md:p-14 bg-background/60 backdrop-blur-sm">
         {/* Subtle grid */}
         <div
-          className="absolute inset-0 opacity-[0.04] pointer-events-none"
+          className="absolute inset-0 opacity-[0.03] pointer-events-none"
           style={{
             backgroundImage: `linear-gradient(rgba(78,225,192,1) 1px, transparent 1px), linear-gradient(90deg, rgba(78,225,192,1) 1px, transparent 1px)`,
             backgroundSize: "40px 40px",
           }}
+        />
+
+        {/* Vertical accent line */}
+        <div
+          className={`absolute ${founder.flip ? "right-0" : "left-0"} top-12 bottom-12 w-[2px] bg-gradient-to-b ${founder.accent} opacity-40 rounded-full`}
         />
 
         <div className="relative z-10">
@@ -110,7 +136,7 @@ function FounderBlock({ founder, index }: { founder: (typeof founders)[0]; index
             initial={{ opacity: 0, x: founder.flip ? 20 : -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className={`text-sm font-semibold tracking-widest uppercase mb-3 bg-gradient-to-r ${founder.accent} bg-clip-text text-transparent`}
+            className={`text-xs font-bold tracking-[0.2em] uppercase mb-3 bg-gradient-to-r ${founder.accent} bg-clip-text text-transparent`}
           >
             {founder.tagline}
           </motion.p>
@@ -120,7 +146,7 @@ function FounderBlock({ founder, index }: { founder: (typeof founders)[0]; index
             initial={{ opacity: 0, x: founder.flip ? 30 : -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.25, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="text-4xl md:text-5xl font-black text-foreground mb-4 leading-tight"
+            className="text-5xl md:text-6xl font-black text-foreground mb-4 leading-tight"
           >
             {founder.name}
           </motion.h3>
@@ -128,9 +154,9 @@ function FounderBlock({ founder, index }: { founder: (typeof founders)[0]; index
           {/* Divider */}
           <motion.div
             initial={{ width: 0 }}
-            animate={isInView ? { width: 64 } : {}}
+            animate={isInView ? { width: 72 } : {}}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className={`h-0.5 bg-gradient-to-r ${founder.accent} mb-6`}
+            className={`h-[2px] bg-gradient-to-r ${founder.accent} mb-7 rounded-full`}
           />
 
           {/* Bio */}
@@ -148,7 +174,7 @@ function FounderBlock({ founder, index }: { founder: (typeof founders)[0]; index
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.45, duration: 0.6 }}
-            className={`text-sm italic border-l-2 border-ozmo-cyan/50 pl-4 mb-8 text-foreground/60`}
+            className="text-sm italic border-l-2 border-ozmo-cyan/40 pl-4 mb-8 text-foreground/60 leading-relaxed"
           >
             {founder.philosophy}
           </motion.blockquote>
@@ -163,22 +189,25 @@ function FounderBlock({ founder, index }: { founder: (typeof founders)[0]; index
             {founder.skills.map((skill) => (
               <span
                 key={skill}
-                className="px-3 py-1 text-xs font-medium rounded-full bg-ozmo-cyan/10 text-ozmo-cyan border border-ozmo-cyan/20"
+                className="px-3 py-1 text-xs font-semibold rounded-full bg-ozmo-cyan/10 text-ozmo-cyan border border-ozmo-cyan/20 hover:bg-ozmo-cyan/20 transition-colors"
               >
                 {skill}
               </span>
             ))}
           </motion.div>
 
-          {/* Achievements row */}
+          {/* Achievements */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.55, duration: 0.6 }}
-            className="flex gap-4 mb-8"
+            className="flex flex-wrap gap-3 mb-8"
           >
             {founder.achievements.map((ach) => (
-              <div key={ach.label} className="flex items-center gap-2 px-4 py-2.5 rounded-xl glass border border-white/10">
+              <div
+                key={ach.label}
+                className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-ozmo-cyan/30 transition-colors"
+              >
                 <ach.icon className="w-4 h-4 text-ozmo-cyan flex-shrink-0" />
                 <span className="text-xs font-semibold text-foreground/80">{ach.label}</span>
               </div>
@@ -200,7 +229,7 @@ function FounderBlock({ founder, index }: { founder: (typeof founders)[0]; index
                   href={href}
                   whileHover={{ y: -3, scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-11 h-11 rounded-xl glass border border-white/10 flex items-center justify-center hover:border-ozmo-cyan/40 hover:bg-ozmo-cyan/10 transition-all group/icon"
+                  className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:border-ozmo-cyan/40 hover:bg-ozmo-cyan/10 transition-all group/icon"
                   aria-label={platform}
                 >
                   <Icon className="w-4 h-4 text-muted-foreground group-hover/icon:text-ozmo-cyan transition-colors" />
@@ -220,7 +249,7 @@ export function FoundersSection() {
   return (
     <section id="founders" ref={sectionRef} className="relative py-32 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 liquid-bg opacity-30" />
+      <div className="absolute inset-0 liquid-bg opacity-40" />
       <Parallax speed={0.2} className="absolute top-0 left-1/4 w-[800px] h-[800px] bg-ozmo-cyan/5 rounded-full blur-[160px]" children={undefined} />
       <Parallax speed={0.15} className="absolute bottom-0 right-1/4 w-[700px] h-[700px] bg-ozmo-green/5 rounded-full blur-[140px]" children={undefined} />
 
@@ -247,8 +276,8 @@ export function FoundersSection() {
           </ScrollReveal>
         </div>
 
-        {/* Founder blocks — editorial split-screen layout */}
-        <div className="flex flex-col gap-8 lg:gap-12">
+        {/* Founder blocks */}
+        <div className="flex flex-col gap-8 lg:gap-14">
           {founders.map((founder, index) => (
             <FounderBlock key={founder.id} founder={founder} index={index} />
           ))}
