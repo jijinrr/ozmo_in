@@ -15,6 +15,7 @@ const footerLinks = {
   ],
   company: [
     { label: "About Us", href: "#about" },
+    { label: "Our Team", href: "#founders" },
     { label: "Portfolio", href: "#portfolio" },
     { label: "Testimonials", href: "#testimonials" },
     { label: "Careers", href: "#" },
@@ -61,7 +62,7 @@ export function Footer() {
                 whileHover={{ scale: 1.02 }}
               >
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-03-08%20at%206.06.06%E2%80%AFPM-IOTLasZowGMZLarEdb7O8z7GgiX2F5.jpeg"
+                  src="/logo.png"
                   alt="OZMO Innovations"
                   width={160}
                   height={60}

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
 import { Moon, Sun, Menu, X } from "lucide-react"
 import { useTheme } from "next-themes"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { MagneticButton } from "./magnetic-button"
 
@@ -11,6 +12,7 @@ const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#services", label: "Services" },
   { href: "#about", label: "About" },
+  { href: "#founders", label: "Team" },
   { href: "#portfolio", label: "Portfolio" },
   { href: "#contact", label: "Contact" },
 ]
@@ -82,9 +84,14 @@ export function Navbar() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <span className="text-xl md:text-2xl font-black tracking-tight gradient-text-animated">
-                  OZMO
-                </span>
+                <Image
+                  src="/logo.png"
+                  alt="OZMO Innovations"
+                  width={120}
+                  height={50}
+                  className="h-10 w-auto object-contain"
+                  priority
+                />
               </motion.a>
             </MagneticButton>
 

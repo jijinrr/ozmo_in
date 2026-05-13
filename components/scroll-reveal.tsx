@@ -33,7 +33,7 @@ export function ScrollReveal({
   once = true
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once, margin: "-100px" })
+  const isInView = useInView(ref, { once, margin: "-50px" })
 
   const getInitialState = () => {
     switch (direction) {
@@ -77,7 +77,7 @@ export function ScrollReveal({
 }
 
 interface ParallaxProps {
-  children: React.ReactNode
+  children?: React.ReactNode
   className?: string
   speed?: number
   direction?: "up" | "down"
@@ -158,7 +158,7 @@ interface TextRevealProps {
 
 export function TextReveal({ text, className = "", delay = 0 }: TextRevealProps) {
   const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const isInView = useInView(ref, { once: true, margin: "-50px" })
 
   const words = text.split(" ")
 
