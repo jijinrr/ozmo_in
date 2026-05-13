@@ -12,29 +12,6 @@ const stats = [
   { value: 3, suffix: "+", label: "Years Experience", description: "Industry expertise" },
 ]
 
-const qualityPillars = [
-  {
-    icon: Gem,
-    title: "Pixel-Perfect Design",
-    description: "Every interface is crafted to the last pixel. We obsess over typography, spacing, and motion to create experiences that feel genuinely premium.",
-  },
-  {
-    icon: Code2,
-    title: "Clean, Maintainable Code",
-    description: "Production-grade code with zero shortcuts. Well-structured, tested, and documented — built to last and scale without technical debt.",
-  },
-  {
-    icon: BarChart3,
-    title: "Performance-First",
-    description: "Sub-second load times, 95+ Lighthouse scores, and optimised Core Web Vitals — because speed is a feature, not an afterthought.",
-  },
-  {
-    icon: Lock,
-    title: "Security by Default",
-    description: "Every product ships with hardened security, data protection, and compliance baked in from day one — not bolted on later.",
-  },
-]
-
 const features = [
   {
     icon: Award,
