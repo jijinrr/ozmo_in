@@ -108,7 +108,7 @@ function TestimonialCard({ testimonial }: { testimonial: typeof testimonials[0] 
             whileHover={{ scale: 1.1 }}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-ozmo-cyan to-ozmo-green p-0.5 rounded-full">
-              <div className="w-full h-full rounded-full overflow-hidden">
+              <div className="relative w-full h-full rounded-full overflow-hidden">
                 <Image
                   src={testimonial.image}
                   alt={testimonial.name}
@@ -161,8 +161,8 @@ export function TestimonialsSection() {
     >
       {/* Background */}
       <div className="absolute inset-0 liquid-bg opacity-30" />
-      <Parallax speed={0.2} className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-ozmo-cyan/5 rounded-full blur-[120px]" />
-      <Parallax speed={0.15} className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-ozmo-green/5 rounded-full blur-[100px]" />
+      <Parallax speed={0.2} className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-ozmo-cyan/5 rounded-full blur-[120px]" children={undefined} />
+      <Parallax speed={0.15} className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-ozmo-green/5 rounded-full blur-[100px]" children={undefined} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}

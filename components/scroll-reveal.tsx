@@ -1,7 +1,19 @@
 "use client"
 
-import { useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { motion, useInView, useScroll, useTransform, MotionValue } from "framer-motion"
+
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px), (hover: none), (pointer: coarse)")
+    const update = () => setIsMobile(mq.matches)
+    update()
+    mq.addEventListener("change", update)
+    return () => mq.removeEventListener("change", update)
+  }, [])
+  return isMobile
+}
 
 interface ScrollRevealProps {
   children: React.ReactNode
@@ -78,6 +90,7 @@ export function Parallax({
   direction = "up"
 }: ParallaxProps) {
   const ref = useRef<HTMLDivElement>(null)
+  const isMobile = useIsMobile()
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end start"]
@@ -85,6 +98,10 @@ export function Parallax({
 
   const factor = direction === "up" ? -1 : 1
   const y = useTransform(scrollYProgress, [0, 1], [100 * speed * factor, -100 * speed * factor])
+
+  if (isMobile) {
+    return <div className={className}>{children}</div>
+  }
 
   return (
     <motion.div
@@ -109,6 +126,7 @@ export function ZoomScroll({
   scaleRange = [0.8, 1]
 }: ZoomScrollProps) {
   const ref = useRef<HTMLDivElement>(null)
+  const isMobile = useIsMobile()
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "center center"]
@@ -116,6 +134,10 @@ export function ZoomScroll({
 
   const scale = useTransform(scrollYProgress, [0, 1], scaleRange)
   const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 1])
+
+  if (isMobile) {
+    return <div className={className}>{children}</div>
+  }
 
   return (
     <motion.div
