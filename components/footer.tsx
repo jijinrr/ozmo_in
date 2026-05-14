@@ -62,11 +62,11 @@ export function Footer() {
                 whileHover={{ scale: 1.02 }}
               >
                 <Image
-                  src="/logo.png"
+                  src="/logo.svg"
                   alt="OZMO Innovations"
-                  width={160}
-                  height={60}
-                  className="h-12 w-auto object-contain"
+                  width={300}
+                  height={300}
+                  className="h-24 w-auto object-contain"
                 />
               </motion.a>
             </MagneticButton>
