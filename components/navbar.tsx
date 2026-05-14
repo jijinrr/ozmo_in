@@ -71,7 +71,7 @@ export function Navbar() {
         />
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center justify-between h-20 md:h-28">
             {/* Logo */}
             <MagneticButton strength={0.1}>
               <motion.a
@@ -85,11 +85,11 @@ export function Navbar() {
                 whileTap={{ scale: 0.98 }}
               >
                 <Image
-                  src="/logo.png"
+                  src="/logo.svg"
                   alt="OZMO Innovations"
-                  width={120}
-                  height={50}
-                  className="h-10 w-auto object-contain"
+                  width={400}
+                  height={400}
+                  className="h-16 md:h-24 w-auto object-contain"
                   priority
                 />
               </motion.a>

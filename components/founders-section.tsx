@@ -10,7 +10,7 @@ const founders = [
   {
     id: 1,
     name: "Jijin Raj R",
-    role: "Co-Founder & CEO",
+    role: "Co-Founder",
     tagline: "Architect of Digital Vision",
     bio: "Visionary technologist and entrepreneur driving OZMO Innovations' mission to engineer digital excellence. With a relentless passion for building world-class products, Jijin transforms bold ideas into scalable digital realities — from cutting-edge web platforms to AI-powered enterprise systems.",
     philosophy: "\"Great products aren't built — they're engineered with intention, crafted with soul, and shipped with purpose.\"",
@@ -27,8 +27,8 @@ const founders = [
   },
   {
     id: 2,
-    name: "Faisal",
-    role: "Co-Founder & CTO",
+    name: "Faisal A S",
+    role: "Co-Founder",
     tagline: "Engineer of the Impossible",
     bio: "Strategic innovator and technical architect behind OZMO's most ambitious digital transformations. Faisal turns complex technical challenges into elegant, scalable solutions — building systems that perform flawlessly under pressure and grow gracefully at scale.",
     philosophy: "\"Technology should be invisible. When built right, it simply empowers people to do extraordinary things.\"",
@@ -295,7 +295,7 @@ export function FoundersSection() {
               <div className="flex items-center justify-center gap-3">
                 <div className="h-px w-12 bg-gradient-to-r from-transparent to-ozmo-cyan" />
                 <p className="text-sm font-semibold text-ozmo-cyan tracking-wide">
-                  Jijin Raj R &amp; Faisal — Co-Founders, OZMO Innovations
+                  Jijin Raj R &amp; Faisal A S — Co-Founders, OZMO Innovations
                 </p>
                 <div className="h-px w-12 bg-gradient-to-l from-transparent to-ozmo-cyan" />
               </div>
