@@ -71,7 +71,7 @@ export function Navbar() {
         />
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20 md:h-28">
+          <div className="flex items-center justify-between h-24 md:h-32">
             {/* Logo */}
             <MagneticButton strength={0.1}>
               <motion.a
@@ -87,9 +87,9 @@ export function Navbar() {
                 <Image
                   src="/logo.svg"
                   alt="OZMO Innovations"
-                  width={400}
-                  height={400}
-                  className="h-16 md:h-24 w-auto object-contain"
+                  width={500}
+                  height={500}
+                  className="h-20 md:h-28 w-auto object-contain"
                   priority
                 />
               </motion.a>

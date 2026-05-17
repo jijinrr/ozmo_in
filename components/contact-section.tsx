@@ -17,17 +17,23 @@ const contactInfo = [
     href: "mailto:hello@ozmoinnovations.com",
   },
   {
-  icon: Phone,
-  label: "Phone",
-  value: "+91 8457570938",
-  href: "tel:+918457570938",
-},
-{
-  icon: MapPin,
-  label: "Location",
-  value: "Dubai, UAE",
-  href: "#",
-},
+    icon: Phone,
+    label: "Phone (India)",
+    value: "+91 8547570938",
+    href: "tel:+918547570938",
+  },
+  {
+    icon: Phone,
+    label: "Phone (UAE)",
+    value: "+971 585907388",
+    href: "tel:+971585907388",
+  },
+  {
+    icon: MapPin,
+    label: "Location",
+    value: "India & UAE",
+    href: "#",
+  },
 ]
 
 const socialLinks = [
@@ -319,7 +325,7 @@ export function ContactSection() {
 
       {/* Floating WhatsApp Button */}
       <motion.a
-        href="https://wa.me/15551234567"
+        href="https://wa.me/918547570938"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
