@@ -14,10 +14,16 @@ export const metadata: Metadata = {
   description: 'We build powerful websites, scalable applications, and AI-driven solutions. Premium technology partner for your digital transformation.',
   keywords: ['web development', 'app development', 'AI solutions', 'digital marketing', 'technology', 'innovation'],
   authors: [{ name: 'OZMO Innovations' }],
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     title: 'OZMO Innovations | Engineering Digital Excellence',
     description: 'We build powerful websites, scalable applications, and AI-driven solutions.',
     type: 'website',
+    images: ['/logo.png'],
   },
 }
 
