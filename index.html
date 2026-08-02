@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="OZMO Digital - Premium IT Consulting and Custom Software Development Agency. We craft high-performance digital products, AI solutions, and cloud architectures.">
+  <title>OZMO Digital | Next-Gen Software Engineering & Design Agency</title>
+  <link rel="icon" type="image/png" href="assets/OZMO-LOGO.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lottie Player -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+  <!-- Ambient Aurora & Particle Canvas Background -->
+  <canvas id="ambientCanvas" class="ambient-canvas"></canvas>
+
+  <!-- Custom Cursor Dot -->
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Cura Style Header -->
+  <header class="cura-header" id="mainHeader">
+    <div class="cura-header-container">
+      <a href="#" class="cura-logo" id="headerLogo">
+        <img src="assets/OZMO-LOGO.png" alt="OZMO Innovations" class="cura-logo-img">
+      </a>
+
+      <div class="cura-header-right">
+        <!-- Desktop Navigation Links -->
+        <nav class="cura-nav" aria-label="Main Navigation">
+          <ul class="cura-nav-list">
+            <li><a href="#hero" class="cura-nav-link active">Home</a></li>
+            <li><a href="#solution" class="cura-nav-link">Architecture</a></li>
+            <li><a href="#services" class="cura-nav-link">Expertise</a></li>
+            <li><a href="#portfolio" class="cura-nav-link">Showcase</a></li>
+            <li><a href="#contact" class="cura-nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Top Right Framed Bracket CTA Button -->
+        <a href="#contact" class="cura-framed-btn">
+          <span class="corner corner-tl"></span>
+          <span class="corner corner-tr"></span>
+          <span class="corner corner-bl"></span>
+          <span class="corner corner-br"></span>
+          <span class="square-bullet">■</span> Partner with us
+        </a>
+
+        <button class="menu-toggle cura-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#solution" class="mobile-nav-link">Architecture</a></li>
+        <li><a href="#services" class="mobile-nav-link">Expertise</a></li>
+        <li><a href="#portfolio" class="mobile-nav-link">Showcase</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li><a href="#contact" class="mobile-nav-link btn-mobile-cta">Partner with us</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <p>Let's collaborate</p>
+        <a href="mailto:hello@ozmo.digital" class="mobile-email">hello@ozmo.digital</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main>
+
+    <!-- Vertical Grid Lines Overlay (Full Page) -->
+    <div class="cura-grid-overlay">
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+    </div>
+
+    <!-- 1. HERO SECTION (CURA CLIMATE EXACT UI DESIGN - OZMO INNOVATIONS) -->
+    <section class="cura-hero-section" id="hero">
+
+      <!-- Split Screen Backgrounds -->
+      <div class="cura-bg-top"></div>
+      <div class="cura-bg-bottom"></div>
+
+      <div class="cura-hero-inner">
+        <!-- Top Headline Area -->
+        <div class="cura-headline-container">
+          <h1 class="cura-headline">
+            <span class="headline-word word-1">Next-Gen AI &</span>
+            <span class="headline-word word-2">software, today.</span>
+          </h1>
+        </div>
+
+        <!-- Bottom Content Block (Inside Olive Green Split) -->
+        <div class="cura-bottom-container">
+          <div class="cura-text-block">
+            <p class="cura-description">
+              OZMO engineers custom AI applications, cloud infrastructure, and enterprise digital ecosystems — driving
+              technological transformation without compromising security or scale.
+            </p>
+
+            <div class="cura-btn-group">
+              <a href="#innovations" class="cura-white-framed-btn">
+                <span class="corner corner-tl"></span>
+                <span class="corner corner-tr"></span>
+                <span class="corner corner-bl"></span>
+                <span class="corner corner-br"></span>
+                <span class="square-bullet">■</span> Explore Innovations
+              </a>
+            </div>
+          </div>
+
+
+          <!-- Right Side Floating 3D Rocks Graphic -->
+          <div class="cura-floating-rocks-wrapper">
+            <img src="assets/Ai4.png" alt="3D AI Figure" class="cura-rocks-image" />
+          </div>
+        </div>
+    </section>
+
+    <!-- 1.5 NODE DIAGRAM SECTION (Lucien Replica - OZMO INNOVATIONS METHODOLOGY) -->
+    <section class="section node-diagram-section" id="solution">
+      <div class="container text-center diagram-header-container">
+
+        <div class="hero-top-label" style="justify-content: center; margin-bottom: 2rem;">
+          <span class="label-line pulse-line"></span>
+          <span class="label-text glow-text">OZMO ARCHITECTURE & METHODOLOGY</span>
+          <span class="label-line pulse-line" style="transform: rotate(180deg);"></span>
+        </div>
+        <div class="hero-content reveal-fade-up"
+          style="width: 100%; max-width: 1400px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: -2rem;">
+
+          <!-- Lottie Player for Desktop -->
+          <lottie-player
+            src="https://cdn.prod.website-files.com/668cfe183a839e6152d1ef92/66a75e2bf139635a338cecc7_Hero-Lottie.json"
+            background="transparent" speed="1" class="desktop-lottie"
+            style="width: 100%; max-width: 1300px; height: auto; margin-bottom: -3rem; margin-top: -2rem; transform: scale(1.15);"
+            loop autoplay></lottie-player>
+
+          <!-- Lottie Player for Mobile -->
+          <lottie-player
+            src="https://cdn.prod.website-files.com/66a9c95f449dacb5ffb41446/66b0aa85691908dacfe80fde_mobile%20hero%20lottie.json"
+            background="transparent" speed="1" class="mobile-lottie"
+            style="width: 100%; max-width: 700px; height: auto; display: none; margin-bottom: -2rem; transform: scale(1.1);"
+            loop autoplay></lottie-player>
+
+
+        </div>
+        <h4 class="hero-title"
+          style="max-width: 950px; font-size: 1.5rem; color: #000000; margin-top: 40px; font-weight: 400; line-height: 1.2; text-align: center; position: relative; z-index: 10; letter-spacing: -0.02em;">
+          OZMO Innovations empowers enterprise businesses to engineer intelligent AI systems, architect cloud
+          infrastructure, and scale digital products through performance-driven technology.
+        </h4>
+      </div>
+
+      <!-- Marvelloux UI Grid (OZMO Innovations Workflow) -->
+      <div class="marvelloux-grid">
+        <!-- Card 1: AI Discovery -->
+        <div class="marv-card">
+          <div class="marv-step-num">01</div>
+          <div class="marv-content">
+            <h3 class="marv-title">AI Discovery</h3>
+            <p class="marv-desc">We analyze domain workflows and data pipelines to uncover high-impact artificial
+              intelligence and automation opportunities.</p>
+          </div>
+          <div class="marv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Card 2: System Architecture -->
+        <div class="marv-card">
+          <div class="marv-step-num">02</div>
+          <div class="marv-content">
+            <h3 class="marv-title">System Architecture</h3>
+            <p class="marv-desc">Architecting robust, cloud-native frameworks designed for low latency, zero-downtime
+              reliability, and enterprise scale.</p>
+          </div>
+          <div class="marv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Card 3: Digital Engineering -->
+        <div class="marv-card">
+          <div class="marv-step-num">03</div>
+          <div class="marv-content">
+            <h3 class="marv-title">Digital Engineering</h3>
+            <p class="marv-desc">Building custom AI models, intuitive user interfaces, and robust APIs tailored for
+              seamless human-technology interaction.</p>
+          </div>
+          <div class="marv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+              <path d="M2 2l7.586 7.586"></path>
+              <circle cx="11" cy="11" r="2"></circle>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Card 4: Scale & Accelerate -->
+        <div class="marv-card">
+          <div class="marv-step-num">04</div>
+          <div class="marv-content">
+            <h3 class="marv-title">Scale & Accelerate</h3>
+            <p class="marv-desc">Deploying self-optimizing pipelines and continuous intelligence systems for accelerated
+              business transformation and growth.</p>
+          </div>
+          <div class="marv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- 3. SERVICES SECTION (NOVIINDUS REPLICA) -->
+    <section class="novi-services-section" id="services">
+      <!-- novi-max-w -->
+      <div class="novi-max">
+
+        <!-- Sticky Header Row -->
+        <div class="novi-sticky-header">
+          <div>
+            <div class="novi-header-subtitle">
+              <!-- Green Play Icon SVG -->
+              <svg viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              Our Services
+            </div>
+            <h2 class="novi-header-title">What we offer to you</h2>
+          </div>
+        </div>
+
+        <!-- Stacking Cards Container -->
+        <div class="novi-cards-container">
+
+          <!-- Card 1 (App Development) -->
+          <div class="novi-card novi-card-1">
+            <div class="novi-card-inner" style="border-top: unset !important;">
+              <div class="novi-card-left">
+                <span class="novi-card-number">(01)</span>
+                <div class="novi-card-img-wrapper">
+                  <img src="assets/S3.png" alt="App Development" class="novi-card-img">
+                </div>
+              </div>
+              <div class="novi-card-right">
+                <div class="novi-card-header">
+                  <h3 class="novi-card-title">App Development</h3>
+                  <a href="#contact" class="novi-know-more">+ KNOW MORE</a>
+                </div>
+                <p class="novi-card-desc">
+                  As a trusted mobile app development company, we build apps for business growth through technology. We
+                  use Flutter, React Native, and native iOS/Android, powered by robust backends. Built to match the
+                  scale
+                  of your business.
+                </p>
+                <ul class="novi-card-list">
+                  <li>1. Cross-Platform App Development (Flutter / React Native)</li>
+                  <li>2. Native App Development (iOS / Android)</li>
+                  <li>3. AI-Powered App Features</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 (Website Design) -->
+          <div class="novi-card novi-card-2">
+            <div class="novi-card-inner">
+              <div class="novi-card-left">
+                <span class="novi-card-number">(02)</span>
+                <div class="novi-card-img-wrapper">
+                  <img src="assets/S2.png" alt="Website Design" class="novi-card-img">
+                </div>
+              </div>
+              <div class="novi-card-right">
+                <div class="novi-card-header">
+                  <h3 class="novi-card-title">Website Design</h3>
+                  <a href="#contact" class="novi-know-more">+ KNOW MORE</a>
+                </div>
+                <p class="novi-card-desc">
+                  We create websites that turn visitors into enquiries. We use Figma for design, Next.js / React for
+                  performance, WordPress when you need simple editing. Fast, responsive, conversion-focused.
+                </p>
+                <ul class="novi-card-list">
+                  <li>1. Custom Website Design (UI/UX)</li>
+                  <li>2. WordPress Website Designing</li>
+                  <li>3. Frontend Design (Next / React)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 (Web Development) -->
+          <div class="novi-card novi-card-3">
+            <div class="novi-card-inner">
+              <div class="novi-card-left">
+                <span class="novi-card-number">(03)</span>
+                <div class="novi-card-img-wrapper">
+                  <img src="assets/S1.png" alt="Web Development" class="novi-card-img">
+                </div>
+              </div>
+              <div class="novi-card-right">
+                <div class="novi-card-header">
+                  <h3 class="novi-card-title">Web Development</h3>
+                  <a href="#contact" class="novi-know-more">+ KNOW MORE</a>
+                </div>
+                <p class="novi-card-desc">
+                  We build Custom Web Application Development for growing businesses. E-commerce, delivery, matrimonial,
+                  and education platforms-built for performance and clarity. Built on Python or Node.js, engineered to
+                  scale smoothly.
+                </p>
+                <ul class="novi-card-list">
+                  <li>1. Education Platforms (LMS, Student Portals)</li>
+                  <li>2. E-commerce & Marketplace Platforms</li>
+                  <li>3. Food/Grocery Delivery Platforms</li>
+                  <li>4. Matrimonial & Matchmaking Portals</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 (Digital Marketing) -->
+          <div class="novi-card novi-card-4">
+            <div class="novi-card-inner">
+              <div class="novi-card-left">
+                <span class="novi-card-number">(04)</span>
+                <div class="novi-card-img-wrapper">
+                  <img src="assets/S7.png" alt="Digital Marketing" class="novi-card-img">
+                </div>
+              </div>
+              <div class="novi-card-right">
+                <div class="novi-card-header">
+                  <h3 class="novi-card-title">Digital Marketing</h3>
+                  <a href="#contact" class="novi-know-more">+ KNOW MORE</a>
+                </div>
+                <p class="novi-card-desc">
+                  We help you grow your online presence and drive traffic that converts. From SEO and SEM to social
+                  media
+                  management and content strategy, we deliver results-driven marketing campaigns.
+                </p>
+                <ul class="novi-card-list">
+                  <li>1. Search Engine Optimization (SEO)</li>
+                  <li>2. Search Engine Marketing (SEM / PPC)</li>
+                  <li>3. Social Media Marketing & Management</li>
+                  <li>4. Content Marketing & Strategy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 (AI Development) -->
+          <div class="novi-card novi-card-5">
+            <div class="novi-card-inner">
+              <div class="novi-card-left">
+                <span class="novi-card-number">(05)</span>
+                <div class="novi-card-img-wrapper">
+                  <img src="assets/S6.png" alt="AI Development" class="novi-card-img">
+                </div>
+              </div>
+              <div class="novi-card-right">
+                <div class="novi-card-header">
+                  <h3 class="novi-card-title">AI Development</h3>
+                  <a href="#contact" class="novi-know-more">+ KNOW MORE</a>
+                </div>
+                <p class="novi-card-desc">
+                  We integrate advanced Artificial Intelligence to automate workflows, derive actionable insights, and
+                  build smarter digital products. From LLM integration to custom machine learning models, we engineer
+                  the future.
+                </p>
+                <ul class="novi-card-list">
+                  <li>1. Large Language Model (LLM) Integration</li>
+                  <li>2. Custom Machine Learning Solutions</li>
+                  <li>3. AI-Powered Workflow Automation</li>
+                  <li>4. Predictive Analytics & Data Science</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 5. OUR WORKS / OZMO PORTFOLIO SECTION -->
+    <section class="section ecosystem-partners-section" id="portfolio">
+      <!-- Background Architectural Vertical Grid Lines -->
+      <div class="ecosystem-grid-lines" aria-hidden="true">
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+      </div>
+
+      <div class="containerz ecosystem-container">
+        <div class="ecosystem-layout">
+
+          <!-- Left Column: Narrative & Headline -->
+          <div class="ecosystem-info-col reveal-fade-up">
+
+            <div class="integrations-top-bar reveal-fade-up">
+              <span class="top-bar-labelz">THE OZMO PORTFOLIO &bull; OUR WORKS</span>
+              <div class="top-bar-linez"></div>
+            </div>
+
+            <h2 class="ecosystem-title">
+              Crafting digital <br>products that scale.
+            </h2>
+
+            <p class="ecosystem-text">
+              OZMO is an agile technology studio engineering high-concurrency cloud architectures, custom AI workflows,
+              and modern web applications for visionaries worldwide.
+            </p>
+            <p class="ecosystem-text">
+              Explore our selected flagship project architectures below &mdash; built for rapid execution, high
+              reliability, and exceptional user experiences.
+            </p>
+          </div>
+
+          <!-- Right Column: Our Work View Cards Grid (Matching Reference Image) -->
+          <div class="ecosystem-cards-grid reveal-fade-up">
+
+            <!-- Card 1: Captura -->
+            <div class="partner-card">
+              <div class="partner-default-content">
+                <div class="partner-logo-wrapper">
+                  <img src="assets/logos/captura.svg" alt="Captura Logo" class="partner-logo-img">
+                </div>
+                <span class="partner-name">NBI</span>
+              </div>
+              <div class="partner-hover-view">
+                <img src="assets/ai_studio_dashboard.png" alt="Captura AI Platform" class="partner-hover-img">
+                <div class="partner-hover-overlay">
+                  <h4 class="partner-hover-title">Notice Board India</h4>
+                  <span class="partner-hover-link">View Project &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: USeed -->
+            <div class="partner-card">
+              <div class="partner-default-content">
+                <div class="partner-logo-wrapper">
+                  <img src="assets/logos/useed.svg" alt="UCeed Logo" class="partner-logo-img">
+                </div>
+                <span class="partner-name">OZMO SYNC</span>
+              </div>
+              <div class="partner-hover-view">
+                <img src="assets/cloudarch_dashboard.png" alt="USeed Platform" class="partner-hover-img">
+                <div class="partner-hover-overlay">
+                  <h4 class="partner-hover-title">SYNC Employee Management</h4>
+                  <span class="partner-hover-link">View Project &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: NorthX Climate Tech -->
+            <div class="partner-card">
+              <div class="partner-default-content">
+                <div class="partner-logo-wrapper">
+                  <img src="assets/logos/northx.svg" alt="NorthX Climate Tech Logo" class="partner-logo-img">
+                </div>
+                <span class="partner-name">NorthX Climate Tech</span>
+              </div>
+              <div class="partner-hover-view">
+                <img src="assets/devflow_dashboard.png" alt="NorthX Climate Tech" class="partner-hover-img">
+                <div class="partner-hover-overlay">
+                  <h4 class="partner-hover-title">NorthX Matrix</h4>
+                  <span class="partner-hover-link">View Project &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Zacua Ventures -->
+            <div class="partner-card">
+              <div class="partner-default-content">
+                <div class="partner-logo-wrapper">
+                  <img src="assets/logos/zacua.svg" alt="Zacua Ventures Logo" class="partner-logo-img">
+                </div>
+                <span class="partner-name">Zacua Ventures</span>
+              </div>
+              <div class="partner-hover-view">
+                <img src="assets/S2.png" alt="Zacua Ventures" class="partner-hover-img">
+                <div class="partner-hover-overlay">
+                  <h4 class="partner-hover-title">Zacua Ecosystem</h4>
+                  <span class="partner-hover-link">View Project &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Acciona -->
+            <div class="partner-card">
+              <div class="partner-default-content">
+                <div class="partner-logo-wrapper">
+                  <img src="assets/logos/acciona.svg" alt="Acciona Logo" class="partner-logo-img">
+                </div>
+                <span class="partner-name">Acciona</span>
+              </div>
+              <div class="partner-hover-view">
+                <img src="assets/S3.png" alt="Acciona Tech" class="partner-hover-img">
+                <div class="partner-hover-overlay">
+                  <h4 class="partner-hover-title">Acciona Platform</h4>
+                  <span class="partner-hover-link">View Project &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Aecon -->
+            <div class="partner-card">
+              <div class="partner-default-content">
+                <div class="partner-logo-wrapper">
+                  <img src="assets/logos/aecon.svg" alt="Aecon Logo" class="partner-logo-img">
+                </div>
+                <span class="partner-name">Aecon</span>
+              </div>
+              <div class="partner-hover-view">
+                <img src="assets/S4.png" alt="Aecon Platform" class="partner-hover-img">
+                <div class="partner-hover-overlay">
+                  <h4 class="partner-hover-title">Aecon Digital</h4>
+                  <span class="partner-hover-link">View Project &rarr;</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Plus Crosshair Grid Intersection Marker at Bottom -->
+        <div class="ecosystem-plus-marker" aria-hidden="true">+</div>
+    </section>
+
+
+
+
+    <!-- 3.5 INTEGRATIONS SECTION -->
+    <section class="section integrations-section" id="integrations">
+      <!-- Background Concentric Arc Rings (Enhanced Bright & Smaller Radii) -->
+      <div class="integrations-rings-bg" aria-hidden="true">
+        <svg viewBox="0 0 1440 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="brightRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="rgba(255, 255, 255, 0.07)" />
+              <stop offset="50%" stop-color="rgba(255, 255, 255, 0.20)" />
+              <stop offset="100%" stop-color="rgba(255, 255, 255, 0.08)" />
+            </linearGradient>
+          </defs>
+          <circle cx="720" cy="680" r="160" stroke="url(#brightRingGrad)" stroke-width="1.8" />
+          <circle cx="720" cy="680" r="280" stroke="url(#brightRingGrad)" stroke-width="1.8" opacity="0.9" />
+          <circle cx="720" cy="680" r="400" stroke="url(#brightRingGrad)" stroke-width="1.6" opacity="0.8" />
+          <circle cx="720" cy="680" r="520" stroke="url(#brightRingGrad)" stroke-width="1.6" opacity="0.75" />
+          <circle cx="720" cy="680" r="640" stroke="url(#brightRingGrad)" stroke-width="1.5" opacity="0.65" />
+          <circle cx="720" cy="680" r="760" stroke="url(#brightRingGrad)" stroke-width="1.5" opacity="0.55" />
+          <circle cx="720" cy="680" r="880" stroke="url(#brightRingGrad)" stroke-width="1.5" opacity="0.45" />
+          <circle cx="720" cy="680" r="1000" stroke="url(#brightRingGrad)" stroke-width="1.5" opacity="0.35" />
+          <circle cx="720" cy="680" r="1120" stroke="url(#brightRingGrad)" stroke-width="1.5" opacity="0.25" />
+          <circle cx="720" cy="680" r="1240" stroke="url(#brightRingGrad)" stroke-width="1.5" opacity="0.18" />
+        </svg>
+      </div>
+
+      <div class="containerz">
+        <!-- Top Horizontal Line with Label (Matching Reference Image) -->
+        <div class="integrations-top-bar reveal-fade-up">
+          <span class="top-bar-label">DIGITAL ECOSYSTEM</span>
+          <div class="top-bar-line"></div>
+        </div>
+
+        <!-- Header Grid (Two-Column Layout Matching Reference Image) -->
+        <div class="integrations-header-grid reveal-fade-up">
+          <div class="integrations-title-col">
+            <h2 class="integrations-title">Seamlessly integrate with <br><span class="integrations-title-white">your
+                entire stack.</span></h2>
+          </div>
+          <div class="integrations-desc-col">
+            <p class="integrations-subtitle">OZMO architectures plug directly into your existing enterprise tools—from
+              robust cloud infrastructure and secure payment gateways to advanced AI models.</p>
+          </div>
+        </div>
+      </div> <!-- End Container -->
+
+      <!-- Infinite Marquee Cards Rows (Black & White Elevated Cards) -->
+      <div class="integrations-cards-wrapper reveal-fade-up" style="transition-delay: 0.2s;">
+        <!-- Side Fade Edges -->
+        <div class="integrations-fade-left"></div>
+        <div class="integrations-fade-right"></div>
+
+        <!-- Row 1: Left Scroll -->
+        <div class="integrations-track-row track-row-1">
+          <!-- Card 1: OpenAI -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .392-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.494 4.494z" />
+                </svg>
+              </span>
+              <span class="integration-tag">LLM</span>
+            </div>
+            <div class="integration-name">OpenAI</div>
+          </div>
+
+          <!-- Card 2: Anthropic -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M13.827 3.52h3.603L24 20.48h-3.603l-6.57-16.96zm-7.258 0h3.767L16.906 20.48h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 10.959L8.453 7.687 6.205 14.48H10.7z" />
+                </svg>
+              </span>
+              <span class="integration-tag">LLM</span>
+            </div>
+            <div class="integration-name">Anthropic</div>
+          </div>
+
+          <!-- Card 3: Slack -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zm1.271 0a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zm0 1.271a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zm10.122 2.521a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zm-1.268 0a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zm-2.523 10.122a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zm0-1.268a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Comms</span>
+            </div>
+            <div class="integration-name">Slack</div>
+          </div>
+
+          <!-- Card 4: GitHub -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+              </span>
+              <span class="integration-tag">Code</span>
+            </div>
+            <div class="integration-name">GitHub</div>
+          </div>
+
+          <!-- Card 5: Jira -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.004-1.005zm5.723-5.756H5.736a5.215 5.215 0 0 0 5.215 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.762a1.005 1.005 0 0 0-1.001-1.005zM23.013 0H11.455a5.215 5.215 0 0 0 5.215 5.215h2.129v2.057A5.215 5.215 0 0 0 24.017 12.49V1.005A1.005 1.005 0 0 0 23.013 0z" />
+                </svg>
+              </span>
+              <span class="integration-tag">PM</span>
+            </div>
+            <div class="integration-name">Jira</div>
+          </div>
+
+          <!-- Card 6: AWS S3 -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M11.87 0l.36.21v23.18l-.36.21-9.56-4.54V4.54L11.87 0zm.79.21l9.56 4.54v14.5l-9.56 4.54V.21zM5.87 16.26l5.21 2.48v-4.96l-5.21-1.02v3.5zm0-4.2l5.21 1.02V8.12L5.87 10.6v1.46zm0-2.22l5.21-2.48V3.4l-5.21 2.48v3.96zm7 6.42l5.21-2.48V10.6l-5.21 1.02v4.64zm0-5.42l5.21-1.02V5.88l-5.21 2.48v2.48z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Storage</span>
+            </div>
+            <div class="integration-name">AWS S3</div>
+          </div>
+
+          <!-- Card 7: Figma -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Design</span>
+            </div>
+            <div class="integration-name">Figma</div>
+          </div>
+
+          <!-- DUPLICATE FOR SEAMLESS LOOPING (Row 1) -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .392-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.494 4.494z" />
+                </svg>
+              </span>
+              <span class="integration-tag">LLM</span>
+            </div>
+            <div class="integration-name">OpenAI</div>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M13.827 3.52h3.603L24 20.48h-3.603l-6.57-16.96zm-7.258 0h3.767L16.906 20.48h-3.674l-1.343-3.461H5.017l-1.344 3.46H0L6.57 3.522zm4.132 10.959L8.453 7.687 6.205 14.48H10.7z" />
+                </svg>
+              </span>
+              <span class="integration-tag">LLM</span>
+            </div>
+            <div class="integration-name">Anthropic</div>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zm1.271 0a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zm0 1.271a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zm10.122 2.521a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zm-1.268 0a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zm-2.523 10.122a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zm0-1.268a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Comms</span>
+            </div>
+            <div class="integration-name">Slack</div>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+              </span>
+              <span class="integration-tag">Code</span>
+            </div>
+            <div class="integration-name">GitHub</div>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M11.571 11.513H0a5.218 5.218 0 0 0 5.232 5.215h2.13v2.057A5.215 5.215 0 0 0 12.575 24V12.518a1.005 1.005 0 0 0-1.004-1.005zm5.723-5.756H5.736a5.215 5.215 0 0 0 5.215 5.214h2.129v2.058a5.218 5.218 0 0 0 5.215 5.214V6.762a1.005 1.005 0 0 0-1.001-1.005zM23.013 0H11.455a5.215 5.215 0 0 0 5.215 5.215h2.129v2.057A5.215 5.215 0 0 0 24.017 12.49V1.005A1.005 1.005 0 0 0 23.013 0z" />
+                </svg>
+              </span>
+              <span class="integration-tag">PM</span>
+            </div>
+            <div class="integration-name">Jira</div>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M11.87 0l.36.21v23.18l-.36.21-9.56-4.54V4.54L11.87 0zm.79.21l9.56 4.54v14.5l-9.56 4.54V.21zM5.87 16.26l5.21 2.48v-4.96l-5.21-1.02v3.5zm0-4.2l5.21 1.02V8.12L5.87 10.6v1.46zm0-2.22l5.21-2.48V3.4l-5.21 2.48v3.96zm7 6.42l5.21-2.48V10.6l-5.21 1.02v4.64zm0-5.42l5.21-1.02V5.88l-5.21 2.48v2.48z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Storage</span>
+            </div>
+            <div class="integration-name">AWS S3</div>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Design</span>
+            </div>
+            <div class="integration-name">Figma</div>
+          </div>
+        </div>
+
+        <!-- Row 2: Right Scroll -->
+        <div class="integrations-track-row track-row-2">
+          <!-- Card 8: Google Drive -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.01 1.485c-2.082 0-3.754.02-3.743.047.01.02 1.708 3.001 3.774 6.62l3.76 6.574h3.76c2.081 0 3.753-.02 3.742-.047-.005-.02-1.708-3.001-3.775-6.62l-3.76-6.574zm-4.76 1.73a789.828 789.861 0 0 0-3.63 6.319L0 15.868l1.89 3.298 1.885 3.297 3.62-6.335 3.618-6.33-1.88-3.287C8.1 4.704 7.255 3.22 7.25 3.214zm2.259 12.653-.203.348c-.114.198-.96 1.672-1.88 3.287a423.93 423.948 0 0 1-1.698 2.97c-.01.026 3.24.042 7.222.042h7.244l1.796-3.157c.992-1.734 1.85-3.23 1.906-3.323l.104-.167h-7.249z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Docs</span>
+            </div>
+            <div class="integration-name">Google Drive</div>
+          </div>
+
+          <!-- Card 9: Salesforce -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M9.765 3.782a4.31 4.31 0 0 1 3.104-1.314 4.35 4.35 0 0 1 3.91 2.43 3.304 3.304 0 0 1 1.38-.301 3.33 3.33 0 0 1 3.327 3.33c0 .27-.033.53-.092.78a2.978 2.978 0 0 1-.485 5.88H6.58a3.644 3.644 0 0 1-.573-7.236 4.32 4.32 0 0 1 3.758-3.57z" />
+                </svg>
+              </span>
+              <span class="integration-tag">CRM</span>
+            </div>
+            <div class="integration-name">Salesforce</div>
+          </div>
+
+          <!-- Card 10: HubSpot -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M22.175 11.282a4.258 4.258 0 0 0-3.651-4.205V5.047a1.558 1.558 0 0 0 .898-1.406V3.6a1.561 1.561 0 0 0-3.123 0v.041c0 .626.372 1.166.898 1.406V7.08a4.239 4.239 0 0 0-2.027.78L8.916 4.28a1.856 1.856 0 0 0 .065-.47A1.855 1.855 0 1 0 7.125 5.66l5.92 3.51a4.267 4.267 0 0 0 .44 5.51l-1.75 1.75a1.404 1.404 0 0 0-.407-.062 1.42 1.42 0 1 0 1.42 1.42 1.404 1.404 0 0 0-.062-.407l1.73-1.73a4.27 4.27 0 1 0 7.759-4.369zm-4.27 2.764a1.84 1.84 0 1 1 0-3.68 1.84 1.84 0 0 1 0 3.68z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Marketing</span>
+            </div>
+            <div class="integration-name">HubSpot</div>
+          </div>
+
+          <!-- Card 11: Zapier -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0L9.5 9.5H0L7.5 15l-3 9L12 18.5l7.5 5.5-3-9L24 9.5h-9.5z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Auto</span>
+            </div>
+            <div class="integration-name">Zapier</div>
+          </div>
+
+          <!-- Card 12: Snowflake -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M13.1 1.049a1.1 1.1 0 0 0-2.2 0v3.388L8.746 2.283a1.1 1.1 0 0 0-1.556 1.556L9.957 6.6H6.57a1.1 1.1 0 0 0 0 2.2h3.387l-2.764 2.764a1.1 1.1 0 0 0 1.555 1.555L11.9 9.966v2.434a1.1 1.1 0 0 0 2.2 0V9.966l2.752 2.753a1.1 1.1 0 0 0 1.556-1.555L15.644 8.8H19.03a1.1 1.1 0 1 0 0-2.2h-3.386l2.766-2.761a1.1 1.1 0 0 0-1.556-1.556L14.1 4.437V1.049z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Data</span>
+            </div>
+            <div class="integration-name">Snowflake</div>
+          </div>
+
+          <!-- Card 13: Stripe -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Payments</span>
+            </div>
+            <div class="integration-name">Stripe</div>
+          </div>
+
+          <!-- DUPLICATE FOR SEAMLESS LOOPING (Row 2) -->
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12.01 1.485c-2.082 0-3.754.02-3.743.047.01.02 1.708 3.001 3.774 6.62l3.76 6.574h3.76c2.081 0 3.753-.02 3.742-.047-.005-.02-1.708-3.001-3.775-6.62l-3.76-6.574zm-4.76 1.73a789.828 789.861 0 0 0-3.63 6.319L0 15.868l1.89 3.298 1.885 3.297 3.62-6.335 3.618-6.33-1.88-3.287C8.1 4.704 7.255 3.22 7.25 3.214zm2.259 12.653-.203.348c-.114.198-.96 1.672-1.88 3.287a423.93 423.948 0 0 1-1.698 2.97c-.01.026 3.24.042 7.222.042h7.244l1.796-3.157c.992-1.734 1.85-3.23 1.906-3.323l.104-.167h-7.249z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Docs</span>
+            </div>
+            <div class="integration-name">Google Drive</div>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M9.765 3.782a4.31 4.31 0 0 1 3.104-1.314 4.35 4.35 0 0 1 3.91 2.43 3.304 3.304 0 0 1 1.38-.301 3.33 3.33 0 0 1 3.327 3.33c0 .27-.033.53-.092.78a2.978 2.978 0 0 1-.485 5.88H6.58a3.644 3.644 0 0 1-.573-7.236 4.32 4.32 0 0 1 3.758-3.57z" />
+                </svg>
+              </span>
+              <span class="integration-tag">CRM</span>
+            </div>
+            <div class="integration-name">Salesforce</div>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M22.175 11.282a4.258 4.258 0 0 0-3.651-4.205V5.047a1.558 1.558 0 0 0 .898-1.406V3.6a1.561 1.561 0 0 0-3.123 0v.041c0 .626.372 1.166.898 1.406V7.08a4.239 4.239 0 0 0-2.027.78L8.916 4.28a1.856 1.856 0 0 0 .065-.47A1.855 1.855 0 1 0 7.125 5.66l5.92 3.51a4.267 4.267 0 0 0 .44 5.51l-1.75 1.75a1.404 1.404 0 0 0-.407-.062 1.42 1.42 0 1 0 1.42 1.42 1.404 1.404 0 0 0-.062-.407l1.73-1.73a4.27 4.27 0 1 0 7.759-4.369zm-4.27 2.764a1.84 1.84 0 1 1 0-3.68 1.84 1.84 0 0 1 0 3.68z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Marketing</span>
+            </div>
+            <div class="integration-name">HubSpot</div>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0L9.5 9.5H0L7.5 15l-3 9L12 18.5l7.5 5.5-3-9L24 9.5h-9.5z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Auto</span>
+            </div>
+            <div class="integration-name">Zapier</div>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M13.1 1.049a1.1 1.1 0 0 0-2.2 0v3.388L8.746 2.283a1.1 1.1 0 0 0-1.556 1.556L9.957 6.6H6.57a1.1 1.1 0 0 0 0 2.2h3.387l-2.764 2.764a1.1 1.1 0 0 0 1.555 1.555L11.9 9.966v2.434a1.1 1.1 0 0 0 2.2 0V9.966l2.752 2.753a1.1 1.1 0 0 0 1.556-1.555L15.644 8.8H19.03a1.1 1.1 0 1 0 0-2.2h-3.386l2.766-2.761a1.1 1.1 0 0 0-1.556-1.556L14.1 4.437V1.049z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Data</span>
+            </div>
+            <div class="integration-name">Snowflake</div>
+          </div>
+          <div class="integration-card">
+            <div class="integration-card-header">
+              <span class="integration-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z" />
+                </svg>
+              </span>
+              <span class="integration-tag">Payments</span>
+            </div>
+            <div class="integration-name">Stripe</div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+    <!-- 4.5 TEAM / SDK SECTION (Ultra-Luxury Black & White Architectural Theme) -->
+    <section class="section sdk-section" id="team">
+      <!-- Background Architectural Grid Line Pattern -->
+      <div class="sdk-bg-grid" aria-hidden="true">
+        <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="architecturalGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0,0,0,0.035)" stroke-width="1" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#architecturalGrid)" />
+        </svg>
+      </div>
+
+      <div class="containerz">
+        <div class="sdk-grid-wrapper">
+
+          <!-- Left Column: Title, Subtitle, Key Metrics & Interactive Slider Controls -->
+          <div class="sdk-content reveal-fade-up">
+            <div class="sdk-top-bar">
+              <span class="pulse-dot-dark"></span>
+              <span class="top-bar-label">ENGINEERING LEADERSHIP</span>
+              <div class="top-bar-line"></div>
+            </div>
+
+            <h2 class="sdk-title">
+              Meet the architects <br>
+              <span class="sdk-title-highlight">of digital evolution.</span>
+            </h2>
+
+            <p class="sdk-subtitle">
+              A multi-disciplinary collective of senior engineers, product strategists, and AI researchers united by a
+              commitment to zero-fluff code quality and architectural precision.
+            </p>
+
+            <!-- Team Stats Highlights (Modern Agency Metrics) -->
+            <div class="team-stats-grid">
+              <div class="team-stat-item">
+                <span class="team-stat-num">100%</span>
+                <span class="team-stat-label">Code Quality</span>
+              </div>
+              <div class="team-stat-item">
+                <span class="team-stat-num">Next-Gen</span>
+                <span class="team-stat-label">AI & Web Stack</span>
+              </div>
+              <div class="team-stat-item">
+                <span class="team-stat-num">24/7</span>
+                <span class="team-stat-label">Agile Support</span>
+              </div>
+            </div>
+
+            <!-- Controls & Progress Indicator -->
+            <div class="team-carousel-controls">
+              <div class="team-counter">
+                <span id="teamCurrentSlide" class="counter-active">01</span>
+                <span class="counter-divider">/</span>
+                <span id="teamTotalSlides" class="counter-total">05</span>
+              </div>
+
+              <div class="team-progress-bar">
+                <div class="team-progress-fill" id="teamProgressFill" style="width: 25%;"></div>
+              </div>
+
+              <div class="carousel-nav-buttons">
+                <button id="prevTeamSlide" class="carousel-btn" aria-label="Previous Team Member">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                </button>
+                <button id="nextTeamSlide" class="carousel-btn" aria-label="Next Team Member">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Team Cards Carousel -->
+          <div class="team-visual-container reveal-fade-up">
+            <div class="team-carousel-window">
+              <div class="team-carousel-track" id="teamCarouselTrack">
+
+
+                <!-- Card 1 -->
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img src="assets/Team/empl-01.jpeg" alt="Rahul Nair">
+                  </div>
+                  <div class="team-info">
+                    <h4 class="team-name">Jijin Raj R</h4>
+                    <p class="team-role">CEO</p>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img src="assets/Team/empl-02.jpeg" alt="Fathima Fidha">
+                  </div>
+                  <div class="team-info">
+                    <h4 class="team-name">Sanjay SR</h4>
+                    <p class="team-role">COO</p>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img src="assets/Team/empl-2.jpg" alt="Anagha AC">
+                  </div>
+                  <div class="team-info">
+                    <h4 class="team-name">Swapna TK</h4>
+                    <p class="team-role">Software Tester</p>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img src="assets/Team/empl-3.jpg" alt="James Wilson">
+                  </div>
+                  <div class="team-info">
+                    <h4 class="team-name">Jitty Abraham</h4>
+                    <p class="team-role">Digital Marketing</p>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="team-card">
+                  <div class="team-img-wrapper">
+                    <img src="assets/Team/empl-4.jpeg" alt="James Wilson">
+                  </div>
+                  <div class="team-info">
+                    <h4 class="team-name">Alfiya</h4>
+                    <p class="team-role">UI/UX</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- 10. CONTACT SECTION (FORM-FREE MINIMAL HIGH-END DESIGN) -->
+    <section class="section ozmo-contact-section" id="contact">
+      <!-- Background Concentric Arc Rings (Matching Digital Ecosystem Image UI) -->
+
+
+      <div class="containerz">
+
+        <!-- Top Horizontal Line with Label & Live Badge (Matching Reference Image UI) -->
+        <div class="contact-top-bar reveal-fade-up">
+          <span class="top-bar-label">DIRECT ACCESS</span>
+
+          <div class="top-bar-line"></div>
+        </div>
+
+        <!-- Two-Column Header Grid (Matching Reference Image UI) -->
+        <div class="contact-header-grid reveal-fade-up">
+          <div class="contact-title-col">
+            <h2 class="ozmo-contact-title">
+              Let&rsquo;s connect <br><span class="contact-title-accent">directly with our team.</span>
+            </h2>
+          </div>
+          <div class="contact-desc-col">
+            <p class="ozmo-contact-subtitle">
+              Skip generic intake forms and wait times. Connect directly with our Principal Architects and Studio Leads.
+              We guarantee a direct response within 2 hours.
+            </p>
+          </div>
+        </div>
+
+        <!-- Primary Action Cards Grid (Email, Phone, Quick Schedule) -->
+        <div class="ozmo-contact-cards-grid reveal-fade-up">
+
+          <!-- Email Card -->
+          <div class="ozmo-contact-card card-hover-glow">
+            <div class="card-top-row">
+              <div class="card-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <span class="card-label">Email Us Directly</span>
+              <a href="mailto:hello@ozmoinnovations.com" class="card-primary-value">hello@ozmoinnovations.com</a>
+              <p class="card-subtext">For project inquiries, technical specs & studio proposals</p>
+            </div>
+
+            <div class="card-actions">
+              <a href="mailto:hello@ozmo.digital" class="ozmo-btn ozmo-btn-primary">
+                Send Email
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <button class="ozmo-btn ozmo-btn-outline copy-quick-btn" data-copy="hello@ozmoinnovations.com"
+                title="Copy Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                Copy
+              </button>
+            </div>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="ozmo-contact-card card-hover-glow">
+            <div class="card-top-row">
+              <div class="card-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <span class="card-badge badge-green">24/5 Support</span>
+            </div>
+
+            <div class="card-body">
+              <span class="card-label">Direct Phone Line</span>
+              <a href="tel:+917012160065" class="card-primary-value">+91 7012160065</a>
+              <p class="card-subtext">Direct voice line for immediate executive consultation</p>
+            </div>
+
+            <div class="card-actions">
+              <a href="tel:+917012160065" class="ozmo-btn ozmo-btn-primary">
+                Call Now
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </a>
+              <button class="ozmo-btn ozmo-btn-outline copy-quick-btn" data-copy="+917012160065" title="Copy Number">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                Copy
+              </button>
+            </div>
+          </div>
+
+          <!-- WhatsApp Direct Card -->
+          <div class="ozmo-contact-card card-hover-glow">
+            <div class="card-top-row">
+              <div class="card-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.461c-1.78 0-3.525-.478-5.056-1.38l-.362-.214-3.757.986 1.003-3.663-.235-.374a8.87 8.87 0 0 1-1.36-4.757c0-4.904 3.99-8.895 8.894-8.895 2.377 0 4.61 1.002 6.291 2.686A8.825 8.825 0 0 1 20.94 12.5c0 4.905-3.99 8.894-8.889 8.894M12.051 0C5.401 0 0 5.402 0 12.051c0 2.123.553 4.197 1.603 6.017L0 24l6.095-1.599a11.96 11.96 0 0 0 5.956 1.586h.005c6.649 0 12.052-5.402 12.052-12.052S18.7 0 12.051 0z" />
+                </svg>
+              </div>
+              <span class="card-badge">Instant Chat</span>
+            </div>
+
+            <div class="card-body">
+              <span class="card-label">WhatsApp Direct</span>
+              <a href="https://wa.me/917012160065" target="_blank" rel="noopener" class="card-primary-value">+91
+                7012160065</a>
+              <p class="card-subtext">Direct messaging channel with our principal tech leads</p>
+            </div>
+
+            <div class="card-actions">
+              <a href="https://wa.me/917012160065" target="_blank" rel="noopener" class="ozmo-btn ozmo-btn-primary">
+                Open Chat
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <button class="ozmo-btn ozmo-btn-outline copy-quick-btn" data-copy="+917012160065" title="Copy Number">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                Copy
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Location Hub Section (Trivandrum HQ Only) -->
+        <div class="ozmo-location-hub reveal-fade-up">
+          <div class="location-hub-header">
+            <div>
+              <h3 class="location-hub-title">OZMO Headquarters & Engineering Hub</h3>
+            </div>
+
+            <!-- Single Location Badge -->
+            <div class="office-tabs">
+              <button class="office-tab-btn active" data-office="trivandrum">
+                <span class="office-flag">&#x1F1EE;&#x1F1F3;</span> Trivandrum HQ
+              </button>
+            </div>
+          </div>
+
+          <!-- Location Detail Card & Live Map -->
+          <div class="location-display-wrapper">
+            <!-- Left Info Panel -->
+            <div class="location-info-panel">
+              <div class="location-status-bar">
+                <span class="location-status-tag" id="officeStatusText">TRIVANDRUM HQ &bull; OPEN NOW</span>
+                <span class="location-clock" id="officeClock">--:-- --</span>
+              </div>
+
+              <h4 class="location-name" id="officeNameTitle">OZMO Innovations</h4>
+              <p class="location-address" id="officeFullAddress">
+                OZMO Innovations Hub, Trivandrum, Kerala &bull; India
+              </p>
+
+              <div class="location-meta-grid">
+                <div class="meta-item">
+                  <span class="meta-label">Coordinates</span>
+                  <span class="meta-value" id="officeCoords">8.5058&deg; N, 76.9084&deg; E</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Studio Hours</span>
+                  <span class="meta-value">9:00 AM &ndash; 6:00 PM (IST)</span>
+                </div>
+              </div>
+
+              <div class="location-actions">
+                <a href="https://maps.google.com/?q=Unicorn's+Coworking+Space+Trivandrum" target="_blank" rel="noopener"
+                  class="ozmo-btn ozmo-btn-outline" id="officeMapBtn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Get Directions
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Interactive Map Embed Container -->
+            <div class="location-map-panel">
+              <iframe id="ozmoMapIframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.62083936115798!2d76.90840529309331!3d8.5058449181512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bdcd406d5789%3A0x6c9858263f1e2518!2sUnicorn's%20Coworking%20Space%20Trivandrum!5e0!3m2!1sen!2sin!4v1785677300194!5m2!1sen!2sin"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin" title="OZMO Trivandrum Office Location Map"></iframe>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- Schedule Call Modal Component -->
+    <div class="ozmo-modal-backdrop" id="scheduleModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="ozmo-modal-card">
+        <button class="modal-close-btn" id="closeScheduleModalBtn" aria-label="Close modal">&times;</button>
+        <div class="modal-badge">DIRECT BOOKING</div>
+        <h3 class="modal-title" id="modalTitle">Schedule Scoping Call</h3>
+        <p class="modal-sub">Select your preferred 15-min discovery slot with our Principal Architect:</p>
+
+        <div class="time-slots-grid">
+          <button class="time-slot-btn active">Today &bull; 2:00 PM</button>
+          <button class="time-slot-btn">Today &bull; 4:30 PM</button>
+          <button class="time-slot-btn">Tomorrow &bull; 10:00 AM</button>
+          <button class="time-slot-btn">Tomorrow &bull; 3:00 PM</button>
+        </div>
+
+        <button class="ozmo-submit-btn" id="confirmBookingBtn" style="margin-top: 1.5rem;">
+          Confirm Time Slot &rarr;
+        </button>
+
+        <div class="form-success-box" id="bookingSuccessBox" style="display: none; margin-top: 1rem;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="#34d399" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          <div>
+            <h4>Slot Reserved!</h4>
+            <p>Calendar invite with Google Meet link sent to your active session.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification Element -->
+    <div class="ozmo-toast" id="ozmoToast">
+      <span id="toastMsg">Copied to clipboard!</span>
+    </div>
+
+  </main>
+
+  <!-- 11. FOOTER -->
+  <!-- 11. MONUMENTAL HIGH-END STUDIO FOOTER -->
+  <footer class="main-footer" id="studioFooter">
+    <!-- Top Infinite Marquee Ticker Bar -->
+    <div class="footer-ticker-wrapper">
+      <div class="footer-ticker-track">
+        <span>OZMO INNOVATIONS &bull; NEXT-GEN APPLIED AI &amp; LLM ENGINE LABS &bull; AUTONOMOUS AGENTIC SYSTEMS &bull;
+          ENTERPRISE NEURAL ARCHITECTURES &bull; TRIVANDRUM GLOBAL AI HQ &bull;&nbsp;</span>
+        <span>OZMO INNOVATIONS &bull; NEXT-GEN APPLIED AI &amp; LLM ENGINE LABS &bull; AUTONOMOUS AGENTIC SYSTEMS &bull;
+          ENTERPRISE NEURAL ARCHITECTURES &bull; TRIVANDRUM GLOBAL AI HQ &bull;&nbsp;</span>
+      </div>
+    </div>
+
+    <div class="containerz footer-content-container">
+      <!-- Minimal 4-Column Architectural Footer Grid -->
+      <div class="footer-main-grid">
+
+        <!-- Column 1: Studio Brand -->
+        <div class="footer-col footer-col-brand">
+          <a href="#" class="footer-logo-link">
+            <img src="assets/OZMO-LOGO.png" alt="OZMO Innovations" class="footer-logo-img">
+          </a>
+          <p class="footer-mission-text">
+            Applied AI &amp; enterprise software studio.
+          </p>
+        </div>
+
+        <!-- Column 2: Capabilities -->
+        <div class="footer-col">
+          <h4 class="footer-col-heading">Capabilities</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services">Web Platforms</a></li>
+            <li><a href="#services">AI Solutions</a></li>
+            <li><a href="#services">Cloud DevOps</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Navigation -->
+        <div class="footer-col">
+          <h4 class="footer-col-heading">Studio</h4>
+          <ul class="footer-links-list">
+            <li><a href="#portfolio">Our Works</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Global HQ & Direct Touch -->
+        <div class="footer-col footer-col-contact">
+          <h4 class="footer-col-heading">Global HQ</h4>
+          <p class="footer-address-info">
+            Unicorn's Coworking Space<br>Trivandrum, Kerala, India
+          </p>
+          <div class="footer-direct-touch">
+            <a href="mailto:hello@ozmoinnovations.com" class="footer-contact-link">hello@ozmoinnovations.com</a>
+            <a href="tel:+917012160065" class="footer-contact-link">+91 7012160065</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Monumental Big Typography Section: OZMO INNOVATIONS with Fall Kinetic Animation -->
+      <div class="footer-kinetic-banner" id="footerKineticBanner">
+        <h1 class="kinetic-huge-title" aria-label="OZMO INNOVATIONS">
+          <span class="fall-char" style="--char-idx: 0;">O</span>
+          <span class="fall-char" style="--char-idx: 1;">Z</span>
+          <span class="fall-char" style="--char-idx: 2;">M</span>
+          <span class="fall-char" style="--char-idx: 3;">O</span>
+          <span class="fall-char char-space" style="--char-idx: 4;">&nbsp;</span>
+          <span class="fall-char" style="--char-idx: 5;">I</span>
+          <span class="fall-char" style="--char-idx: 6;">N</span>
+          <span class="fall-char" style="--char-idx: 7;">N</span>
+          <span class="fall-char" style="--char-idx: 8;">O</span>
+          <span class="fall-char" style="--char-idx: 9;">V</span>
+          <span class="fall-char" style="--char-idx: 10;">A</span>
+          <span class="fall-char" style="--char-idx: 11;">T</span>
+          <span class="fall-char" style="--char-idx: 12;">I</span>
+          <span class="fall-char" style="--char-idx: 13;">O</span>
+          <span class="fall-char" style="--char-idx: 14;">N</span>
+          <span class="fall-char" style="--char-idx: 15;">S</span>
+        </h1>
+      </div>
+
+      <!-- Bottom Bar (Copyright, System Status & Socials) -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          &copy; 2026 OZMO INNOVATIONS. All rights reserved.
+        </div>
+
+
+
+        <div class="footer-social-links">
+          <a href="https://github.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X / Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2">
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://wa.me/917012160065" target="_blank" rel="noopener" class="social-icon-btn"
+            aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.461c-1.78 0-3.525-.478-5.056-1.38l-.362-.214-3.757.986 1.003-3.663-.235-.374a8.87 8.87 0 0 1-1.36-4.757c0-4.904 3.99-8.895 8.894-8.895 2.377 0 4.61 1.002 6.291 2.686A8.825 8.825 0 0 1 20.94 12.5c0 4.905-3.99 8.894-8.889 8.894M12.051 0C5.401 0 0 5.402 0 12.051c0 2.123.553 4.197 1.603 6.017L0 24l6.095-1.599a11.96 11.96 0 0 0 5.956 1.586h.005c6.649 0 12.052-5.402 12.052-12.052S18.7 0 12.051 0z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Bracket Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Scroll to top">
+    <span class="corner corner-tl"></span>
+    <span class="corner corner-tr"></span>
+    <span class="corner corner-bl"></span>
+    <span class="corner corner-br"></span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Script.js -->
+  <script src="script.js" defer></script>
+</body>
+
+</html>
