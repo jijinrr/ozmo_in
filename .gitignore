@@ -1,7 +1,9 @@
-# OS files
+# OS and editor files
+.vscode/
 .DS_Store
+Thumbs.db
 
-# Next build cache
+# Build cache
 .next/
 out/
 build/

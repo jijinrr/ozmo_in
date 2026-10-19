@@ -2974,6 +2974,7 @@ img {
   width: 100%;
   max-width: 700px;
   height: 100%;
+  background-image: url('assets/sideimage.png');
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat;
@@ -4615,6 +4616,7 @@ img {
   overflow: hidden;
   position: relative;
   padding: 25rem 0;
+  background-image: url('assets/connection.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
